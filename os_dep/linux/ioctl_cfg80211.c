@@ -5874,9 +5874,6 @@ void rtw_cfg80211_init_wiphy(_adapter *padapter)
 		if(bands)
 			rtw_cfg80211_init_ht_capab(&bands->ht_cap, IEEE80211_BAND_5GHZ, rf_type);
 	}
-
-	/* init regulary domain */
-	rtw_regd_init(padapter);
 }
 
 /*
@@ -6145,6 +6142,9 @@ int rtw_wdev_alloc(_adapter *padapter, struct device *dev)
 	ATOMIC_SET(&pwdev_priv->switch_ch_to, 1);
 	ATOMIC_SET(&pwdev_priv->ro_ch_to, 1);
 #endif
+
+	/* init regulary domain */
+	rtw_regd_init(padapter);
 
 	return ret;
 
