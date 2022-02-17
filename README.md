@@ -67,7 +67,7 @@ Download archive into temp directory
 ```sh
 # mkdir -p /tmp/t4u
 # cd /tmp/t4u
-# wget https://github.com/abperiasamy/rtl8812AU_8821AU_linux/archive/master.zip
+# wget https://github.com/omegacoleman/rtl8812AU_8821AU_linux/archive/refs/heads/kernel-5.10.zip
 ```
 
 Unzip
